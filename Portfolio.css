@@ -1,0 +1,155 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Body */
+body{
+    background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:30px 20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Profile section */
+.profile{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+/* Profile image */
+.profile-img{
+    border-radius:50%;
+    border:3px solid #00e5ff;
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.15) rotate(3deg);
+    box-shadow:0 0 20px #00e5ff;
+}
+
+/* Name */
+.profile h3{
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+/* Job title */
+header p{
+    margin-top:5px;
+    opacity:0.8;
+}
+
+/* NAVBAR */
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    padding:8px 18px;
+    border-radius:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+/* Navigation hover */
+nav ul li a:hover{
+    background:linear-gradient(45deg,#00e5ff,#00ff9d);
+    color:#000;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* MAIN */
+main{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* Section Cards */
+main div, #about{
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    backdrop-filter: blur(8px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+/* Card hover */
+main div:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* Headings */
+main h4, main h3{
+    margin-bottom:10px;
+}
+
+/* Links (projects) */
+main a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background:linear-gradient(45deg,#00e5ff,#00ff9d);
+    color:#000;
+    text-decoration:none;
+    border-radius:20px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+main a:hover{
+    transform:scale(1.05);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.6);
+}
+
+#contact p{
+    margin:5px 0;
+    opacity:0.9;
+}
+
+/* Responsive (mobile) */
+@media(max-width:600px){
+
+.profile{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:10px;
+}
+
+}
